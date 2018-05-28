@@ -30,3 +30,19 @@
   - subcribe()
 - Service-in-service: có thể inject 1 service trong 1 service khác
 ### Routing
+- Routes: dùng để hiển thị khi người dùng click vào link hay đường dẫn URL trên thanh trình duyệt. Gồm 2 thành phần chính:
+  - path: 1 string dùng để đối chiếu với URL trên thanh trình duyệt
+  - component: component router tạo ra khi navigating đến router đó
+- Thêm AppRoutingModule: ng generate module app-routing --flat --module=app
+- Thêm routes: type Routes = Route[ ];
+- RouterModule.ForRoot()
+- Thêm routerOutlet vào app.component.html
+- RouterLink: 
+### HTTP
+- Install the In-memory Web API package from npm: npm install angular-in-memory-web-api --save
+- Http methods return one value:
+  - All HttpClient methods return an RxJS Observable of something.
+  - HTTP is a request/response protocol. You make a request, it returns a single response.
+- HttpClient.get returns response data:
+- Error handling: import { catchError, map, tap } from 'rxjs/operators';
+- Tap into the Observable
