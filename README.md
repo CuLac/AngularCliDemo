@@ -18,6 +18,20 @@
 - AppModule: quản lý các class thư viện
   - Declaration: khai báo các component sử dụng
   - Import: khai báo các class
+- Data binding có 3 loại:
+  - One way từ data source đến view target
+    - Syntax: {{expression}}, [target] = "expression" và bind-target="expression"
+    - Type:
+      - Interpolation
+      - Property
+      - Atttribute
+      - Class
+      - Style
+  - One way từ view target đến data source
+    - Syntax: (target) = (target)="statement" và on-target="statement"
+    - Type: Event
+  - Two way binding:
+    - Syntax: [(target)]="expression" và bindon-target="expression"
 ### Service
 - @Injectable service
   - Được import ngay khi khởi tạo service mới và được khai báo dạng @Injectable, là một thành phần của 1 hệ thống phụ thuộc injection. Các lớp cung cấp 1 injection service, và bản thân nó cũng có thể có injection phụ thuộc.
