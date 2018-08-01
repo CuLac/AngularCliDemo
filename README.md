@@ -23,7 +23,7 @@
     - Syntax: {{expression}}, [target] = "expression" và bind-target="expression"
     - Type:
       - Interpolation
-      - Property
+      - Property: thuộc tính variable
       - Atttribute
       - Class
       - Style
